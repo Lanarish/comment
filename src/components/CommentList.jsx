@@ -1,4 +1,5 @@
 import React from 'react';
+import { RiDeleteBin2Fill } from "react-icons/ri";
 
 
 function CommentList({ comment, removeComment, index }) {
@@ -7,10 +8,7 @@ function CommentList({ comment, removeComment, index }) {
             <div className={"comment" + (index === 0 ? " selected" : "")}>
                 {comment.text}
             </div>
-
-            <button className="commentList-button" onClick={() => removeComment(comment.id)}>Delete</button>
-
-
+            <button className="commentList-button" onClick={() => removeComment(comment.id)}><RiDeleteBin2Fill className="button-delete" /></button>
         </div >
     );
 };

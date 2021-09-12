@@ -1,7 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+
 .comment-container {
+  width: 480px;
+
+  padding: 20px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+  margin-top: 30px;
   text-align: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 5px solid rgb(70, 79, 239);
 }
 
 .comment-form {
@@ -12,8 +29,9 @@
 }
 
 .textarea_comment {
-  width: 300px;
+  width: 350px;
   height: 100px;
+  margin-top: 30px;
   border-radius: 10px;
   border: none;
   box-shadow: 2px 2px 10px 2px rgb(7, 43, 202);
@@ -32,10 +50,10 @@
 
 .commentList-container {
 
-  max-width: 300px;
+  max-width: 350px;
   margin: 0 auto;
   display: flex;
-
+  border-radius: 10px;
 }
 
 .comment {
@@ -43,8 +61,11 @@
   height: 60px;
   display: flex;
   align-items: center;
+  border-radius: 10px;
+  border: 2px solid rgb(71, 69, 69);
   margin-bottom: 5px;
-  background-color: #fff;
+  padding: 10px;
+  background-color: rgba(7, 7, 233, 0.5);
   color: blue;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 16px;
@@ -54,17 +75,23 @@
   /* border-radius: 50%; */
   background-color: rgb(255, 255, 255);
   box-shadow: 0 0 20px 0px rgb(255, 253, 253),
-    /* inner white */
-    0 0 30px 0px rgb(43, 46, 80),
-    /* middle magenta */
-    0 0 50px 10px rgb(8, 0, 255);
-  /* outer cyan */
+
+
 }
 
 .commentList-button {
-  background-color: blue;
+  width: 50px;
+  height: 50px;
+  margin-top: 5px;
+  margin-left: 10px;
+  background-color: rgb(47, 47, 207);
   color: #fff;
   margin-bottom: 5px;
   border: none;
+  border-radius: 50%;
 
+}
+
+.button-delete {
+  font-size: 28px;
 }
