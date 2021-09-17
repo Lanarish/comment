@@ -28,9 +28,10 @@ function App() {
     if(commentInput){
       const newComment ={
         id:Math.random().toString(36).substr(2,9),
-        text:commentInput
+        text:commentInput.textarea,
+        name:commentInput.name
       }
-      setComment([...comments,newComment])
+      setComment([newComment,...comments])
     }
   }
 
@@ -44,6 +45,7 @@ function App() {
       <header>
         <h1>Leave your comment</h1>
       </header>
+     
       <CommentForm  addComment={addComment}/>
       {comments.map((comment,index) =>{
         return(
