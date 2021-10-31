@@ -15,7 +15,7 @@ const CommentForm = ({ addComment }) => {
     const handleSubmit = (e) => {
         e.preventDefault()
         addComment(commentInput)
-        setCommentInput("")
+        setCommentInput({ name: '', textarea: '' })
     }
     const handleKeyPress = (e) => {
         if (e.key === "Enter") {
@@ -25,6 +25,7 @@ const CommentForm = ({ addComment }) => {
     return (
         <form onSubmit={handleSubmit} className="comment-form">
             <input
+                className="name-input"
                 type="text"
                 placeholder="name"
                 onChange={handleChange}
