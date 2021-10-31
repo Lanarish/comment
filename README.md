@@ -1,3 +1,32 @@
+Simple application for adding comments.
+
+The last added comment is highlighted in white and appears first in the list.
+
+<img width="1280" alt="image" src="https://user-images.githubusercontent.com/77628644/139596886-7b09f306-e519-4f5d-845c-cf431ee009e3.png">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
